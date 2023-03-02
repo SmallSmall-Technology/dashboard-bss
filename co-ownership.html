@@ -119,7 +119,7 @@
         aria-expanded="false" aria-label="Toggle navigation">
         <img class="img-fluid" src="./assets/images/menu-burger.svg" alt="">
       </button>
-      <a href="index.html" style="width: 33%">
+      <a href="index.html" style="width: 33%" class="flex-grow-1 text-center">
         <img class="img-fluid" src="assets/images/bss-logo.svg" alt="logo">
       </a>
       <div class="d-flex user-container">
@@ -127,25 +127,30 @@
           <p class="m-0">JD</p>
           <div class="active-user"></div>
         </div>
-        <div class="user-name">
-          <p>John Doe</p>
-        </div>
+
       </div>
       <div class="d-md-none d-block  nav-link text-dark dropdown-toggle dropdown-toggle--custom p-0"
         data-toggle="dropdown" href="#" role="button" aria-expanded="false">
         <img class="img-fluid" src="./assets/images/user-mobile.svg" alt="">
       </div>
 
-      </a>
+
       <div class="dropdown-menu menu_icon--dropdown p-0  logout-dropdown">
-        <!-- Menu Desktop view -->
-        <div class=" menu-desktop p-2">
+        <!-- Menu mobile view -->
+        <div class=" menu-desktop py-2 px-4 d-flex flex-column">
           <a href="#">
             <span class="navbar-text text-dark mr-5">
-              Log out
               <img class="img-fluid" src="assets/images/logout.svg" alt="">
+              Log out
             </span>
           </a>
+          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
+            <small style="font-size: 10px; line-height: 14px;">Referral
+              code
+            </small><br>
+            Tna2301
+          </button>
+
         </div>
 
 
@@ -184,11 +189,12 @@
 
       </div>
     </nav>
+    
 
   </header>
 
   <!-- Sub menu for booking section starts here -->
-  <div class="container-fluid d-flex justify-content-center nav-bottom-color">
+  <div class="container-fluid d-flex nav-bottom-color" style="padding-left: 17em;">
     <div class="sub-nav d-flex flex-wrap">
       <a class="text-decoration-none secondary-text-color mr-4 py-3  dashboard-active" href="booking.html">
         <div class="sub-menu-link  ">
