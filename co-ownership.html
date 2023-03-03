@@ -306,12 +306,103 @@
           </div>
           <div class="row mt-4">
             <div class="col-md-3 col-5">
-              <button class="btn font-weight-light w-100 p-md-3 p-2 btn-custom-primary" type="button">
+              <button class="btn font-weight-light w-100 p-md-3 p-2 btn-custom-primary" type="button"
+                data-target="#liquidate" data-toggle="modal">
                 Liquidate</button>
             </div>
             <div class="col-md-3 col-7">
-              <button class="btn font-weight-light w-100 p-md-3 p-2 btn-custom-primary" type="button">
+              <button class="btn font-weight-light w-100 p-md-3 p-2 btn-custom-primary" type="button"
+                data-target="#transferShares" data-toggle="modal">
                 Transfer Shares</button>
+            </div>
+
+            <!-- liqudate shares modal -->
+            <div class="modal fade" id="liquidate" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">Liquidate Shares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-5">
+                    <form>
+                      <div class="form-group">
+                        <label for="liquidateShare">How man shares do you want to sell?</label>
+                        <input type="text" class="form-control" id="liquidateShare" placeholder="Type number of shares">
+
+                      </div>
+
+                      <div class="my-4 text-center mt-5">
+                        <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                          data-target="#createWallet">Liquidate</button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Success after sharing shares modal -->
+            <div class="modal fade d-none" id="liquidate" data-keyboard="false" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">Liquidate Shares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="d-flex flex-column justify-content-items text-center">
+                      <p>Your offer has been received!!</p>
+                      <p>Our team will reach out to you within 24hrs to complete the process</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Transfer shares modal -->
+            <div class="modal fade" id="transferShares" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">Transfer Property Shares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body px-5">
+                    <p class="text-center my-4">You have &nbsp;&nbsp;<span
+                        style="font-size: 26px;">4</span>&nbsp;&nbsp;Property shares</p>
+                    <form>
+                      <div class="form-group m-2">
+                        <label for="liquidateShare">Shares to transfer</label>
+                        <input type="text" class="form-control p-3" id="liquidateShare"
+                          placeholder="Enter number of shares to transfer">
+                      </div>
+                      <div class="form-group m-2">
+                        <label for="liquidateShare">Name of new owner</label>
+                        <input type="text" class="form-control p-3" id="liquidateShare" placeholder="Full  name">
+                      </div>
+                      <div class="form-group m-2">
+                        <label for="liquidateShare">Email of new owner</label>
+                        <input type="text" class="form-control p-3" id="liquidateShare" placeholder="Email Address">
+                      </div>
+
+                      <div class="my-4 text-center mt-5">
+                        <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                          data-target="#createWallet">Transfer</button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
             </div>
 
           </div>
