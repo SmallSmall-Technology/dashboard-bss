@@ -257,7 +257,7 @@
       </div>
 
       <!-- default Payout -->
-      <div class="col-12 mt-5 collapse show " id="currentBooking">
+      <div class="col-12 mt-5 collapse " id="currentBooking">
         <div class="primary-background p-5 d-flex justify-content-center align-content-center">
           <div class="text-center">
             <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
@@ -315,8 +315,9 @@
       </div>
 
       <!-- Payout -->
-      <div class="col-12 mt-5 collapse show d-none" id="currentBooking">
+      <div class="col-12 mt-5 collapse show" id="currentBooking">
 
+        <!-- payout section -->
         <div class="secondary-background p-5 mb-4">
           <div class="row mb-4">
             <div class="col-12">
@@ -364,6 +365,7 @@
 
         </div>
 
+        <!-- Wallet section  -->
         <div class="primary-background p-5">
           <div class="row mb-4">
             <div class="col-12">
@@ -377,7 +379,7 @@
             </div>
             <div class="col-12 col-md-3">
               <button type="button" class="btn btn-dark py-3 btn-custom-primary px-5" data-toggle="modal"
-                data-target="#">Withdraw</button>
+                data-target="#withdraw">Withdraw</button>
               <p style="font-size: 10px;">Transfer cash from Buysmallsmall into your Bank Account.</p>
             </div>
           </div>
@@ -406,6 +408,194 @@
             </div>
           </div>
 
+        </div>
+
+
+        <!-- Default modal for withdraw to add bank account -->
+        <div class="modal fade" id="withdraw" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5>Withdraw</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="p-2" style="font-size: 12px;">Please add a bank account.</p>
+
+                  </div>
+                </div>
+                <form>
+                  <div class="form-group m-2">
+                    <label style="font-size: 12px;" for="numberOfShares">Bank</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Select your bank</option>
+                      <option>First Bank</option>
+                      <option>Access bank</option>
+                      <option>Zenith Bank</option>
+                    </select>
+                  </div>
+                  <div class="form-group m-2">
+                    <label style="font-size: 12px;" for="nameOfOwner">Account number</label>
+                    <input type="text" class="form-control p-3" id="nameOfOwner"
+                      placeholder="Enter bank account number">
+                  </div>
+
+
+                  <div class="my-4 text-center mt-5">
+                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                      data-target="#addAccount">Add Account</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal to show after adding bank account -->
+        <div class="modal fade" id="#" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5>Withdraw</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5">
+                <div class="row ">
+                  <div class="d-flex">
+                    <div class="primary-background p-3 mr-1">
+                      <p class="font-weight-bold">John Doe</p>
+                      <p>Wema Bank - 5335 04994 48848</p>
+                    </div>
+                    <div class="">
+                      <button type="button" class="btn btn-custom-primary h-100"
+                        style="min-width: 0px">Withdraw</button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-12 my-4">
+                    <a href="#" class="text-dark" style="font-size: 14px;">+ Add new bank account</a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal to withdraw -->
+        <div class="modal fade" id="#" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5>Withdraw</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5">
+                <div class="row ">
+                  <div class="d-flex">
+                    <div class="primary-background p-3 mr-1">
+                      <p class="font-weight-bold">John Doe</p>
+                      <p>Wema Bank - 5335 04994 48848</p>
+                    </div>
+                    <div class="">
+                      <button type="button" class="btn btn-custom-primary h-100"
+                        style="min-width: 0px">Withdraw</button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-12 my-4">
+                    <a href="#" class="text-dark" style="font-size: 14px;">+ Add new bank account</a>
+                  </div>
+                </div>
+                <form>
+
+                  <div class="form-group m-2">
+                    <label style="font-size: 12px;" for="nameOfOwner">Enter amount</label>
+                    <input type="text" class="form-control special-input" id="nameOfOwner" placeholder="Enter amount">
+                  </div>
+
+
+                  <div class="my-4 text-center mt-5">
+                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                      data-target="#createWallet">Withdraw</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal to add a new bank account -->
+        <div class="modal fade" id="#" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5>Withdraw</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body px-5">
+                <div class="row ">
+                  <div class="d-flex">
+                    <div class="primary-background p-3 mr-1">
+                      <p class="font-weight-bold">John Doe</p>
+                      <p>Wema Bank - 5335 04994 48848</p>
+                    </div>
+                    <div class="">
+                      <button type="button" class="btn btn-custom-primary h-100"
+                        style="min-width: 0px">Withdraw</button>
+                    </div>
+
+                  </div>
+
+                  <div class="col-12 my-4">
+                    <a href="#" class="text-dark" style="font-size: 14px;">+ Add new bank account</a>
+                  </div>
+                </div>
+                <form>
+                  <div class="form-group m-2">
+                    <label style="font-size: 12px;" for="numberOfShares">Bank</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Select your bank</option>
+                      <option>First Bank</option>
+                      <option>Access bank</option>
+                      <option>Zenith Bank</option>
+                    </select>
+                  </div>
+                  <div class="form-group m-2">
+                    <label style="font-size: 12px;" for="nameOfOwner">Account number</label>
+                    <input type="text" class="form-control p-3" id="nameOfOwner"
+                      placeholder="Enter bank account number">
+                  </div>
+
+
+                  <div class="my-4 text-center mt-5">
+                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                      data-target="#createWallet">Add Account</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
         </div>
 
       </div>
