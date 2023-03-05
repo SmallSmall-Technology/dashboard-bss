@@ -100,6 +100,7 @@ p {
 
 .dashboard-active, .sub-menu--dashboard-active {
   border-bottom: 3px solid black;
+  color: #222224
 }
 
 .card-custom {
