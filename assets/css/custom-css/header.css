@@ -28,6 +28,12 @@
   border: 1px solid #CCCCD3;
 }
 
+.divider-vertical {
+  width: 0.1px;
+  height: -1px;
+  background-color: #CCCCD3;
+}
+
 
 
 .btn-custom-primary {
