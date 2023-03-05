@@ -46,9 +46,20 @@
 
 .btn-custom-primary:hover {
   background: #39393b;
+  color: #CCCCD3;
+}
+
+
+.btn-custom-secondary {
+  background: #222224;
   border-radius: 4px;
   color: #CCCCD3;
   border: 1px solid #222224;
+}
+
+.btn-custom-secondary:hover {
+  background: #39393b;
+  color: #CCCCD3;
 }
 
 p {
