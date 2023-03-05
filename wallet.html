@@ -315,56 +315,104 @@
       </div>
 
       <!-- Payout -->
-      <div class="col-12 mt-5 collapse  d-none" id="currentBooking">
-        <div class="current-booking">
-          <div class="row">
+      <div class="col-12 mt-5 collapse show d-none" id="currentBooking">
+
+        <div class="secondary-background p-5 mb-4">
+          <div class="row mb-4">
             <div class="col-12">
-              <p>Balance</p>
-              <h3 style="font-size: 40px;">&#8358;500,000.00</h3>
+              <p style="font-size: 22px;">Payout</p>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-3 col-12 d-md-flex pr-0 mb-4">
+              <div>
+                <p style="font-size: 12px;">Previous Payout</p>
+                <div class="d-flex">
+                  <P style="font-size: 25px" class="mr-3">&#8358;20,000</P>
+                  <div class="d-flex flex-column">
+                    <p class="font-weight-light" style="font-size: 12px;">Paid</p>
+                    <p class="font-weight-light" style="font-size: 13px;">Jan 12, 2023</p>
+                  </div>
+                </div>
+                <a class="text-white my-3 d-inline-block" href="#" style="text-decoration: underline;">View
+                  Transactions</a>
+              </div>
+              <div class="divider-vertical mx-auto d-none d-md-block"></div>
+              <div class="divider d-md-none d-block"></div>
+            </div>
+            <div class="col-md-3 col-12 d-md-flex pr-0 mb-4">
+              <div>
+                <p style="font-size: 12px;">Previous Payout</p>
+                <div class="d-flex">
+                  <P style="font-size: 25px" class="mr-3">&#8358;20,000</P>
+                  <div class="d-flex flex-column">
+                    <p class="font-weight-light" style="font-size: 12px;">Paid</p>
+                    <p class="font-weight-light" style="font-size: 13px;">Jan 12, 2023</p>
+                  </div>
+                </div>
+                <a class="text-white my-3 d-inline-block" href="#" style="text-decoration: underline;">View
+                  Transactions</a>
+              </div>
+              <div class="divider-vertical mx-auto d-none d-md-block"></div>
+              <div class="divider  d-md-none d-block"></div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="primary-background p-5">
+          <div class="row mb-4">
+            <div class="col-12">
+              <p style="font-size: 22px;">Wallet</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <p>Wallet Balance</p>
+              <h3 style="font-size: 36px;">&#8358;500,000.00</h3>
+            </div>
+            <div class="col-12 col-md-3">
+              <button type="button" class="btn btn-dark py-3 btn-custom-primary px-5" data-toggle="modal"
+                data-target="#">Withdraw</button>
+              <p style="font-size: 10px;">Transfer cash from Buysmallsmall into your Bank Account.</p>
+            </div>
+          </div>
+          <div class="divider d-md-none d-block my-5"></div>
+
           <div class="row my-5">
-            <div class="col-md-3 col-6 ">
+            <div class="col-md-3 col-12 mb-3 ">
               <p style="font-size: 14px;" class="font-weight-light">Account Name</p>
               <p style="font-size: 26px;">John Doe</p>
             </div>
-            <div class="col-md-3 col-6 ">
+            <div class="col-md-3 col-12 mb-3 ">
               <p style="font-size: 14px;" class="font-weight-light">Account number</p>
-              <p style="font-size: 26px;">236 515 5674</p>
+              <div class="d-flex justify-content-between">
+                <p style="font-size: 26px;" class="align-self-end">236 515 5674</p>
+                <span><img class="img-fluid" src="assets/images/copy.svg" alt=""><br>copy</span>
+              </div>
+
             </div>
-            <div class="col-md-3 col-6 ">
+            <div class="col-md-3 col-12 mb-3 ">
               <p style="font-size: 14px;" class="font-weight-light">Bank name</p>
               <p style="font-size: 26px;">Providus Bank</p>
             </div>
-            <div class="col-md-2 col-12 ">
+            <div class="col-md-2 col-12 mb-3 ">
               <p style="font-size: 14px;" class="font-weight-light">Created</p>
               <p style="font-size: 26px;" class="d-flex align-items-center">10/23</p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-3">
-              <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button">Fund
-                Wallet</button>
-            </div>
-            <div class="col-md-3">
-              <button class="btn font-weight-light subscription-btn p-3 btn-custom-primary" type="button">Pay
-                Subscription</button>
-            </div>
-            <div class="col-md-6">
-              <button class="btn font-weight-light wallet-btn p-3 text-dark" type="button">Subscribe to wallet direct
-                debit</button>
-            </div>
-          </div>
+
         </div>
 
       </div>
 
-
-
-
       <!-- History Booking -->
       <div class="col-12 mt-5 collapse" id="history">
-        <div class="current-booking">
+        <div class="primary-background p-5">
           <div class="table-responsive">
             <table class="table">
               <thead class="thead-dark">
