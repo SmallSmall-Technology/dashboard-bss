@@ -86,6 +86,10 @@
   .certificate-item p {
     text-align: center;
   }
+
+  .certificate-item:not(:last-child, :nth-child(3n)) {
+    border-right: 0px !important
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
