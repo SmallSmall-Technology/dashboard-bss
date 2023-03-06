@@ -18,3 +18,8 @@
   border-radius: 4px;
 
 }
+
+.payout {
+  background-image: url("../../images/wave-bg.png");
+  background-size: 100% 100%;
+}
