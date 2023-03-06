@@ -151,6 +151,11 @@ p {
   color: #CCCCD3;
 }
 
+.user-name {
+  font-size: 13px;
+  align-self: center;
+}
+
 
 
 /*****MEDIA QUERY****/
