@@ -257,7 +257,7 @@
       </div>
 
       <!-- default Payout -->
-      <div class="col-12 mt-5 collapse" id="currentBooking">
+      <div class="col-12 mt-5 collapse " id="currentBookingDefautl">
         <div class="primary-background p-5 d-flex justify-content-center align-content-center">
           <div class="text-center">
             <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
@@ -334,33 +334,24 @@
                   <p class="font-weight-light" style="font-size: 13px;">Jan 12, 2023</p>
                 </div>
               </div>
-              <a class="text-white my-3 d-inline-block" href="#" style="text-decoration: underline;">View
+              <a class="text-white my-3 d-inline-block viewTransaction" href="#"
+                style="text-decoration: underline;">View
                 Transactions</a>
             </div>
             <div class="certificate-item  pr-md-5 mr-md-5 mb-md-5">
-              <p style="font-size: 12px;">Previous Payout</p>
+              <p style="font-size: 12px;">Next Payout</p>
               <div class="d-flex">
                 <P style="font-size: 25px" class="mr-3">&#8358;20,000</P>
                 <div class="d-flex flex-column">
-                  <p class="font-weight-light" style="font-size: 12px;">Paid</p>
-                  <p class="font-weight-light" style="font-size: 13px;">Jan 12, 2023</p>
+                  <p class="font-weight-light" style="font-size: 12px;">Pending</p>
+                  <p class="font-weight-light" style="font-size: 13px;">Feb 12, 2023</p>
                 </div>
               </div>
-              <a class="text-white my-3 d-inline-block" href="#" style="text-decoration: underline;">View
+              <a class="text-white my-3 d-inline-block viewTransaction" href="#"
+                style="text-decoration: underline;">View
                 Transactions</a>
             </div>
-            <div class="certificate-item  pr-md-5 mr-md-5 mb-md-5">
-              <p style="font-size: 12px;">Previous Payout</p>
-              <div class="d-flex">
-                <P style="font-size: 25px" class="mr-3">&#8358;20,000</P>
-                <div class="d-flex flex-column">
-                  <p class="font-weight-light" style="font-size: 12px;">Paid</p>
-                  <p class="font-weight-light" style="font-size: 13px;">Jan 12, 2023</p>
-                </div>
-              </div>
-              <a class="text-white my-3 d-inline-block" href="#" style="text-decoration: underline;">View
-                Transactions</a>
-            </div>
+
 
           </div>
 
@@ -688,6 +679,20 @@
 
   <script>
     $(document).ready(function () {
+      const loadHistory = function () {
+        $("#history").addClass("show");
+        $("#currentBooking").removeClass("show");
+        $("#checklist").removeClass("show");
+
+        $("#checklistBtn").addClass("secondary-text-color")
+        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#currentBookingBtn").addClass("secondary-text-color")
+        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").removeClass("secondary-text-color")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+      }
+
+
       $("#currentBookingBtn").click(function () {
         $("#currentBooking").addClass("show");
         $("#checklist").removeClass("show");
@@ -712,18 +717,10 @@
         $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
 
       });
-      $("#historyBtn").click(function () {
-        $("#history").addClass("show");
-        $("#currentBooking").removeClass("show");
-        $("#checklist").removeClass("show");
 
-        $("#checklistBtn").addClass("secondary-text-color")
-        $("#checklistBtn").removeClass("primary-text-color sub-menu--dashboard-active")
-        $("#currentBookingBtn").addClass("secondary-text-color")
-        $("#currentBookingBtn").removeClass("primary-text-color sub-menu--dashboard-active")
-        $("#historyBtn").removeClass("secondary-text-color")
-        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
-      });
+      $("#historyBtn").click(loadHistory);
+
+      $(".viewTransaction").click(loadHistory);
 
     });
   </script>
