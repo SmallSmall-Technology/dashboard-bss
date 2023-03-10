@@ -2,8 +2,35 @@
   font-family: "Poppins", sans-serif;
 }
 
+header nav {
+  background: #F3F6F8;
+}
+
+/* START CUSTOM FONT SIZES */
+.custom-font-size-14 {
+  font-size: 14px;
+}
+
+.custom-font-size-13 {
+  font-size: 13px;
+}
+
+.custom-font-size-18 {
+  font-size: 18px;
+}
+
+.custom-font-size-22 {
+  font-size: 22px;
+}
+
+.custom-font-size-26 {
+  font-size: 26px;
+}
+
+/* END CUSTOM FONT SIZES */
+
 .primary-background {
-  background: #F6F7F8;
+  background: #F3F6F8;
   border-radius: 10px;
   color: #222224;
 }
@@ -12,6 +39,17 @@
   background: #222224;
   border-radius: 10px;
   color: #ffffff;
+}
+
+.tertiary-background {
+  background: #64318A;
+  color: #ffffff;
+}
+
+.default-background {
+  background: #ffffff;
+  border-radius: 10px;
+  color: #222224;
 }
 
 .primary-text-color {
@@ -105,9 +143,10 @@ p {
 
 .card-custom {
   min-height: 100%;
-  background: #222224;
+  background: #F3F6F8;
   border-radius: 10px;
-  color: #ffffff;
+  color: #222224;
+  border: 0px
 }
 
 .menu-navbar-bg {
