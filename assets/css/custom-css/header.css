@@ -117,7 +117,7 @@ p {
 .user-shorthand {
   width: 29px;
   height: 29px;
-  background-color: #222224;
+  background-color: #662D91;
   color: #ffffff;
   border-radius: 100%;
   text-align: center;
@@ -137,7 +137,7 @@ p {
 }
 
 .dashboard-active, .sub-menu--dashboard-active {
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #64318A;
   color: #222224
 }
 
@@ -197,6 +197,7 @@ p {
 
 
 
+
 /*****MEDIA QUERY****/
 
 /* Small devices (landscape phones, 576px and up) */
@@ -207,7 +208,7 @@ p {
   }
 
   .dashboard-active {
-    border-left: 3px solid black;
+    border-left: 3px solid #64318A;
     border-bottom: 0;
   }
 
@@ -227,6 +228,10 @@ p {
   .btn-custom-primary {
     min-width: 0
   }
+
+  .sub-nav {
+    font-size: 13px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -235,7 +240,8 @@ p {
 /* Medium devices (tablets, 768px and up)*/
 @media screen and (max-width: 768px) {
   .dashboard-active {
-    border-left: 3px solid black;
+    border-left: 3px solid #64318A;
+    ;
     border-bottom: 0;
   }
 }
