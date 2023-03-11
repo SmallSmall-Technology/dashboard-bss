@@ -1,6 +1,6 @@
 .inbox-left {
   height: 650px;
-  background: #222224;
+  background: #64318A;
   border-radius: 10px;
   overflow: scroll;
 
@@ -8,10 +8,11 @@
 
 .inbox-left--msg:hover {
   cursor: pointer;
-  background: #525253;
+  background: #ddc6df;
   border-radius: 10px;
   padding-bottom: 2em;
   margin-bottom: 1em;
+  /* color: #222224 !important; */
 }
 
 /* 
@@ -39,8 +40,12 @@
   font-size: 13px;
 }
 
-.inbox-msg-intro, .inbox-date {
+.inbox-msg-intro, .inbox-date:hover {
   color: #D9D9D9;
+}
+
+.inbox-msg-intro, .inbox-date {
+  color: #0a0101;
 }
 
 .active-inbox {
@@ -81,13 +86,13 @@
 }
 
 .btn-send {
-  background: #222224;
+  background: #64318A;
   border-radius: 4px;
   color: #F6F7F8;
 }
 
 .btn-send:hover {
-  background: #39393b;
+  background: #803d92;
   border-radius: 4px;
   color: #CCCCD3;
   border: 1px solid #222224;

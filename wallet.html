@@ -318,7 +318,7 @@
       </div>
 
       <!-- default Payout -->
-      <div class="col-12 mt-5 collapse show" id="currentBooking">
+      <div class="col-12 mt-5 collapse" id="currentBooking">
         <div class="primary-background p-5 d-flex justify-content-center align-content-center">
           <div class="text-center">
             <img class="mb-4" style="width: 100px;" src="assets/images/wallet.gif" alt="">
@@ -399,7 +399,7 @@
       </div>
 
       <!-- Payout -->
-      <div class="col-12 mt-5 collapse " id="currentBooking">
+      <div class="col-12 mt-5 collapse  show" id="currentBooking">
 
         <!-- payout section -->
         <!-- <div class="secondary-background payout p-5 mb-4">
@@ -492,7 +492,7 @@
 
 
         <!-- Default modal for withdraw to add bank account -->
-        <div class="modal fade" id="" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="withdraw" data-backdrop="static" data-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -527,7 +527,7 @@
 
 
                   <div class="my-4 text-center mt-5">
-                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                    <button type="submit" class="btn btn-dark py-2  tertiary-background px-5" data-toggle="modal"
                       data-target="#addAccount">Add Account</button>
                   </div>
                 </form>
@@ -538,7 +538,7 @@
         </div>
 
         <!-- Modal to show after adding bank account -->
-        <div class="modal fade" id="#" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="" data-backdrop="static" data-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -556,7 +556,7 @@
                       <p>Wema Bank - 5335 04994 48848</p>
                     </div>
                     <div class="">
-                      <button type="button" class="btn btn-custom-primary h-100"
+                      <button type="button" class="btn  tertiary-background h-100"
                         style="min-width: 0px">Withdraw</button>
                     </div>
 
@@ -574,7 +574,7 @@
         </div>
 
         <!-- Modal to withdraw -->
-        <div class="modal fade" id="withdraw" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="" data-backdrop="static" data-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -611,7 +611,7 @@
 
 
                   <div class="my-4 text-center mt-5">
-                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                    <button type="submit" class="btn btn-dark py-2 tertiary-background  px-5" data-toggle="modal"
                       data-target="#createWallet">Withdraw</button>
                   </div>
                 </form>
@@ -622,7 +622,7 @@
         </div>
 
         <!-- Modal to add a new bank account -->
-        <div class="modal fade" id="#" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        <div class="modal fade" id="" data-backdrop="static" data-keyboard="false" tabindex="-1"
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -640,7 +640,7 @@
                       <p>Wema Bank - 5335 04994 48848</p>
                     </div>
                     <div class="">
-                      <button type="button" class="btn btn-custom-primary h-100"
+                      <button type="button" class="btn tertiary-background h-100"
                         style="min-width: 0px">Withdraw</button>
                     </div>
 
@@ -668,10 +668,57 @@
 
 
                   <div class="my-4 text-center mt-5">
-                    <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                    <button type="submit" class="btn btn-dark py-2  tertiary-background px-5" data-toggle="modal"
                       data-target="#createWallet">Add Account</button>
                   </div>
                 </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SUCCESS withdraw Modal -->
+        <div class="modal fade" id="" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Success</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <div class="text-center">
+                  <img class="img-fluid" style="width: 50%;" src="assets/images/success.gif" alt="">
+                  <p>withdraw successfully</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+        <!-- SUCCESS Account added Modal -->
+        <div class="modal fade" id="#" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header primary-background pl-5">
+                <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Success</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <div class="text-center">
+                  <img class="img-fluid" style="width: 50%;" src="assets/images/success.gif" alt="">
+                  <p class="mb-3">Account added successfully</p>
+                  <a href="#" class="text-dark" style="text-decoration: underline;">Withdraw now</a>
+                </div>
               </div>
 
             </div>
