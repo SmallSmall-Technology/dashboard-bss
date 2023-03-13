@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+
+
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/giftBasket.css" />
+
+
+  <title>Portfolio - Gift basket</title>
+</head>
+
+<body>
+
+  <header>
+    <!-- desktop menu bar -->
+    <nav class="navbar navbar-expand-lg nav-bottom-color navbar-light px-4 py-0 d-lg-flex d-none">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-fluid" src="assets/images/bss-logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active mr-5">
+            <a class="nav-link" href="#">
+              <div class="d-flex user-container">
+                <div class="user-shorthand d-flex justify-content-center align-items-center mr-2">
+                  <p class="m-0">JD</p>
+                  <div class="active-user"></div>
+                </div>
+                <div class="user-name">
+                  <p>John Doe</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center  mr-4">
+            <div class="menu-text">
+              <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="property-portfolio.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/portfolio.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center dashboard-active mr-4">
+            <div class="menu-text">
+              <a href="property-portfolio.html" class=" text-dark" style="text-decoration: none;">Property Portfolio</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="wallet.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/wallet-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="wallet.html" class=" text-dark" style="text-decoration: none;">Wallet</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="bss-financing.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/financing-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="bss-financing.html" class=" text-dark" style="text-decoration: none;">Financing</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="inbox.html" class=" text-dark" style="text-decoration: none;">inbox</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="profile.html" class=" text-dark" style="text-decoration: none;">Profile</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/megaphone.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="referral.html" class=" text-dark" style="text-decoration: none;">Referrals</a>
+            </div>
+          </li>
+
+        </ul>
+        <a href="#">
+          <span class="navbar-text text-dark mr-5">
+            Log out
+            <img class="img-fluid" src="assets/images/logout.svg" alt="">
+          </span>
+        </a>
+
+
+      </div>
+    </nav>
+
+    <!-- mobile menu bar -->
+    <nav class="navbar d-flex menu-navbar-bg nav-mobile d-flex d-lg-none">
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <img class="img-fluid" src="./assets/images/menu-burger.svg" alt="">
+      </button>
+      <a href="index.html" style="width: 33%" class="flex-grow-1 text-center">
+        <img class="img-fluid" src="assets/images/bss-logo.svg" alt="logo">
+      </a>
+      <div class="d-flex user-container">
+        <div class="user-shorthand d-flex justify-content-center align-items-center mr-2">
+          <p class="m-0">JD</p>
+          <div class="active-user"></div>
+        </div>
+
+      </div>
+      <div class="d-md-none d-block  nav-link text-dark dropdown-toggle dropdown-toggle--custom p-0"
+        data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        <img class="img-fluid" src="./assets/images/user-mobile2.svg" alt="">
+      </div>
+
+
+      <div class="dropdown-menu menu_icon--dropdown p-0  logout-dropdown">
+        <!-- Menu mobile view -->
+        <div class=" menu-desktop py-2 px-4 d-flex flex-column">
+          <a href="#">
+            <span class="navbar-text text-dark mr-5">
+              <img class="img-fluid" src="assets/images/logout.svg" alt="">
+              Log out
+            </span>
+          </a>
+          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
+            <small style="font-size: 10px; line-height: 14px;">Referral
+              code
+            </small><br>
+            Tna2301
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div id="my-nav" class="collapse navbar-collapse mobile-menu-collapse pl-0 pt-4">
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="index.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
+              &nbsp;&nbsp; Dashboard
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2  dashboard-active">
+          <p>
+            <a href="property-portfolio.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/portfolio.svg" alt="">
+              &nbsp;&nbsp; Property Portfolio
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="wallet.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/wallet-icon.svg" alt="">
+              &nbsp;&nbsp; Wallet
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="wallet.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/financing-icon.svg" alt="">
+              &nbsp;&nbsp; Financing
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="inbox.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
+              &nbsp;&nbsp; Inbox
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="profile.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              &nbsp;&nbsp; Profile
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="referral.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              &nbsp;&nbsp; Referrals
+            </a>
+          </p>
+        </div>
+
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Sub menu for booking section starts here -->
+  <div class="container-fluid d-flex nav-bottom-color sub-menu">
+    <div class="sub-nav d-flex flex-wrap">
+      <a class="text-decoration-none secondary-text-color mr-4 py-3  sub-menu--dashboard-active"
+        href="property-portfolio.html">
+        <div class="sub-menu-link  ">
+          Portfolio
+        </div>
+      </a>
+
+      <a class="text-decoration-none secondary-text-color mr-4 py-3" href="payments.html">
+        <div class="sub-menu-link  ">
+          Payments
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- Main body content starts here -->
+  <main class="container">
+    <div class="row mt-5">
+      <div class="col-12 d-flex justify-content-between">
+        <div style="color: #7D8993; font-size: 13px;" class="font-weight-lighter">
+          <span>Buysmallsmall</span>
+          <span>></span>
+          <span>Dashboard</span>
+          <span>></span>
+          <span>Property portfolio</span>
+          <span>></span>
+          <span>Gift Basket- 2 br Maisonette B2 Olivia Court Lekki</span>
+        </div>
+        <div class="d-md-block d-none">
+          <!-- <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button> -->
+          <button type="button" class="btn btn-dark d-none">Verified</button>
+          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
+            <small style="font-size: 10px; line-height: 14px;">Referral
+              code
+            </small><br>
+            Tna2301
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-5">
+        <p style="font-size: 22px;">Gift Basket</p>
+      </div>
+      <div class="col-12">
+        <nav class="nav">
+          <li class="nav-item mr-3 ">
+            <a class="nav-link primary-text-color  sub-menu--dashboard-active px-0" id="propertyBtn" href="#"
+              role="button">Gift Basket</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link secondary-text-color px-0 " id="shareCertificateBtn" href="#" role="button">Contact
+              List</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link secondary-text-color px-0 " id="historyBtn" href="#" role="button">History</a>
+          </li>
+
+        </nav>
+      </div>
+
+      <!-- Gift basket -->
+      <div class="col-12 mt-5 collapse show" id="property">
+        <div class="primary-background send-gift-container py-5 ">
+          <div class="row mb-4">
+            <div class="col-md-6 col-12 mb-3">
+              <p class="custom-font-size-22">Send Gift</p>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p>Gift Sent</p>
+                  <p class="custom-font-size-22">10</p>
+                </div>
+                <div>
+                  <p>Shares remaining to gift</p>
+                  <p class="custom-font-size-22">10</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 d-flex  mb-3">
+              <div>
+                <p>Value</p>
+                <p class="custom-font-size-22">&#8358;230,000</p>
+              </div>
+            </div>
+          </div>
+          <div class="row custom-form-container mx-0">
+            <div class="col-12 default-background p-md-5 p-2">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="fullName">Full name</label>
+                    <input type="email" class="form-control form-control-lg" id="fullName"
+                      placeholder="Enter full name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="password" class="form-control form-control-lg" id="email" placeholder="Enter email">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="phoneNumber">Phone number</label>
+                    <input type="email" class="form-control form-control-lg" id="phoneNumber"
+                      placeholder="Enter bank account number">
+                  </div>
+
+
+                  <div class="form-group col-md-6">
+                    <label class=" mr-2" for="inlineFormCustomSelectPref">Property Shares Portfoilio</label>
+                    <select class="form-control form-control-lg mr-sm-2 form-control-lg"
+                      id="inlineFormCustomSelectPref">
+                      <option selected>Choose portfolio</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="noOfShares">Number of shares to gift</label>
+                    <input type="password" class="form-control form-control-lg" id="noOfShares"
+                      placeholder="Enter amount of shares">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class=" mr-2" for="inlineFormCustomSelectPref">Gift Delivery method</label>
+                    <select class="form-control form-control-lg mr-sm-2 form-control-lg"
+                      id="inlineFormCustomSelectPref">
+                      <option selected>Choose type of delivery</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn tertiary-background px-5">Send</button>
+                </div>
+
+
+              </form>
+            </div>
+          </div>
+
+          <!-- SUCCESS  Modal for gift sent -->
+          <div class="modal fade d-none" id="success" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header primary-background pl-5">
+                  <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Success</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body p-5">
+                  <div class="text-center">
+                    <img class="img-fluid" style="width: 50%;" src="assets/images/success.gif" alt="">
+                    <p>Gift sent successfully</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 mb-5">
+              <p class="custom-font-size-22">Popular people</p>
+            </div>
+
+            <div class="col-md-4 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <p style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                    style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                <div class="">
+                  <a href="send-gift.html" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <p style="line-height: 15px; font-size: 20px; font-weight: 500;">Richard Roe<br><span
+                    style="font-size: 13px;" class="font-weight-light">richad@gmail.com</span></p>
+                <div class="">
+                  <a href="send-gift.html" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider my-5"></div>
+
+          <div class="row">
+            <div class="col-12 mb-4">
+              <p>Send gift to multiple people</p>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn tertiary-background p-2 " id="add-contact-btn"><i
+                  class="fa-solid fa-circle-plus"></i>&nbsp;&nbsp;Add contact</button>
+            </div>
+          </div>
+
+          <div class="row mx-0" id="new-contact"></div>
+
+        </div>
+
+      </div>
+
+      <!-- Contact List -->
+      <div class="col-12 mt-5 collapse" id="shareCertificate">
+        <div class="primary-background py-5 px-md-5 px-1">
+          <div class="contact-head d-flex justify-content-between mb-5 flex-wrap">
+            <p class="mb-2">7 Contacts</p>
+            <div>
+              <button type="button" class="btn tertiary-background p-2 " id="" data-target="#addContact"
+                data-toggle="modal"><i class="fa-solid fa-circle-plus"></i>&nbsp;&nbsp;Add contact</button>
+            </div>
+          </div>
+
+          <!-- Add contact modal -->
+          <div class="modal fade" id="addContact" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header primary-background pl-5">
+                  <h5>Add a contact to your list</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body px-5">
+
+                  <form>
+                    <div class="form-group m-2">
+                      <label style="font-size: 12px;" for="numberOfShares">Full name</label>
+                      <input type="text" class="form-control p-3" id="numberOfShares" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group m-2">
+                      <label style="font-size: 12px;" for="nameOfOwner">Email</label>
+                      <input type="text" class="form-control p-3" id="nameOfOwner" placeholder="Enter email address">
+                    </div>
+                    <div class="form-group m-2">
+                      <label style="font-size: 12px;" for="emailOfOwner">Phone number</label>
+                      <input type="text" class="form-control p-3" id="emailOfOwner" placeholder="Enter phone number">
+                    </div>
+
+                    <div class=" my-4 text-center mt-5">
+                      <button type="submit" class="btn btn-dark py-2 tertiary-background  px-5" data-toggle="modal"
+                        data-target="#createWallet">Add contact</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- SUCCESS Modal -->
+          <div class="modal fade d-none" id="success" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header primary-background pl-5">
+                  <h5 class="modal-title font-weight-light" id="staticBackdropLabel">Success</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body p-5">
+                  <div class="text-center">
+                    <img class="img-fluid" style="width: 50%;" src="assets/images/success.gif" alt="">
+                    <p>Contact added successfully</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row contact-container">
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3">
+              <div class="contact-card rounded d-flex justify-content-between px-3 py-2 align-items-center">
+                <div class="d-flex ">
+                  <img class="img-fluid" src="assets/images/contact-icon.svg" alt="">
+                  <p class="ml-4" style="line-height: 15px; font-size: 20px; font-weight: 500;">Jane Doe<br><span
+                      style="font-size: 13px;" class="font-weight-light">janed@gmail.com</span></p>
+                </div>
+
+                <div class="">
+                  <p>Shares sent 2</p>
+                  <a href="#" class="btn tertiary-background w-100 py-3">Send gift</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- History  -->
+      <div class="col-12 mt-5 collapse" id="history">
+        <div class="primary-background p-5">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="tertiary-background ">
+                <tr>
+                  <th scope="col">Payment</th>
+                  <th scope="col">Transaction id</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Payout</td>
+                  <td>er355479032039034</td>
+                  <td>&#8358;53,000</td>
+                  <td>
+                    <p class="d-flex align-items-center">15 May, 2021</p>
+                  </td>
+                  <td>Pending</td>
+                </tr>
+                <tr>
+                  <td>Withdraw</td>
+                  <td>er355479032039034</td>
+                  <td>&#8358;53,000</td>
+                  <td>
+                    <p class="d-flex align-items-center">15 May, 2021</p>
+                  </td>
+                  <td>Complete</td>
+                </tr>
+                <tr>
+                  <td>Payout</td>
+                  <td>er355479032039034</td>
+                  <td>&#8358;53,000</td>
+                  <td>
+                    <p class="d-flex align-items-center">15 May, 2021</p>
+                  </td>
+                  <td>Failed</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+        <div>
+          <a class="mr-3" href="#">Rentsmallsmall FAQ</a>
+          <a class="mr-3" href="#">Buysmallsmall FAQ</a>
+          <a class="mr-3" href="#">About Us</a>
+          <a class="" href="#">Blog</a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Jquery js -->
+  <script src="./assets/js/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap js and Popper js -->
+  <script src="./assets/js/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap-js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#propertyBtn").click(function () {
+        $("#property").addClass("show");
+        $("#shareCertificate").removeClass("show");
+        $("#history").removeClass("show");
+        $("#shareCertificateBtn").addClass("secondary-text-color")
+        $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").removeClass("secondary-text-color")
+
+      });
+      $("#shareCertificateBtn").click(function () {
+        $("#shareCertificate").addClass("show");
+        $("#property").removeClass("show");
+        $("#history").removeClass("show");
+        $("#shareCertificateBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#shareCertificateBtn").removeClass("secondary-text-color")
+        $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").addClass("secondary-text-color")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+
+      });
+      $("#historyBtn").click(function () {
+        $("#history").addClass("show");
+        $("#property").removeClass("show");
+        $("#shareCertificate").removeClass("show");
+
+        $("#shareCertificateBtn").addClass("secondary-text-color")
+        $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").addClass("secondary-text-color")
+        $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").removeClass("secondary-text-color")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+      });
+
+
+      // handles switch button for unit
+      $("#percent").click(function () {
+        $("#percent").addClass("set-unit-container");
+        $("#naira").removeClass("set-unit-container");
+      });
+      $("#naira").click(function () {
+        $("#naira").addClass("set-unit-container");
+        $("#percent").removeClass("set-unit-container");
+      });
+
+
+      //Add new contact
+
+      const newPerson = `
+          <div class="col-12 default-background new-contact-form p-md-5 p-2 my-5 ">
+              <div class="d-flex justify-content-end text-danger">
+                <i class="fa-solid fa-circle-xmark" style="cursor: pointer;" id="closeContact"></i>
+              </div>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="fullName">Full name</label>
+                    <input type="email" class="form-control form-control-lg" id="fullName"
+                      placeholder="Enter full name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="password" class="form-control form-control-lg" id="email" placeholder="Enter email">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="phoneNumber">Phone number</label>
+                    <input type="email" class="form-control form-control-lg" id="phoneNumber"
+                      placeholder="Enter bank account number">
+                  </div>
+
+
+                  <div class="form-group col-md-6">
+                    <label class=" mr-2" for="inlineFormCustomSelectPref">Property Shares Portfoilio</label>
+                    <select class="form-control form-control-lg mr-sm-2 form-control-lg"
+                      id="inlineFormCustomSelectPref">
+                      <option selected>Choose portfolio</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="noOfShares">Number of shares to gift</label>
+                    <input type="password" class="form-control form-control-lg" id="noOfShares"
+                      placeholder="Enter amount of shares">
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label class=" mr-2" for="inlineFormCustomSelectPref">Gift Delivery method</label>
+                    <select class="form-control form-control-lg mr-sm-2 form-control-lg"
+                      id="inlineFormCustomSelectPref">
+                      <option selected>Choose type of delivery</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+
+                </div>
+
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn tertiary-background px-5">Send</button>
+                </div>
+
+
+              </form>
+            </div>
+      
+      `;
+
+      $("#add-contact-btn").click(function () {
+        $("#new-contact").append(newPerson)
+      });
+
+
+      // close the new contact form
+      $(document).on('click', '#closeContact', function (e) {
+        $("#closeContact").parents(".new-contact-form ").remove();
+      });
+
+
+
+
+
+
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>
