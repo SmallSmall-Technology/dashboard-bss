@@ -213,6 +213,21 @@ p {
 }
 
 
+.notification-circle {
+  background: #662D91;
+  width: 15px;
+  height: 15px;
+  color: #FFFFFF;
+  border-radius: 100%;
+  padding: 7px;
+  font-size: 9px;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+
+}
+
+
 
 
 /*****MEDIA QUERY****/
