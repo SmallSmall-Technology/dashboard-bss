@@ -32,10 +32,10 @@
   <!-- custom CSS -->
   <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
   <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
-  <link rel="stylesheet" href="./assets/css/custom-css/index.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/bssFinancing.css" />
 
 
-  <title>Dashboard - BSS Home</title>
+  <title>Portfolio - Co-Ownership</title>
 </head>
 
 <body>
@@ -72,7 +72,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item d-flex align-items-center  mr-4  dashboard-active">
+          <li class="nav-item d-flex align-items-center  mr-4">
             <div class="menu-text">
               <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
             </div>
@@ -110,7 +110,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item d-flex align-items-center mr-4">
+          <li class="nav-item d-flex align-items-center mr-4   dashboard-active">
             <div class="menu-text">
               <a href="bss-financing.html" class=" text-dark" style="text-decoration: none;">Financing</a>
             </div>
@@ -209,7 +209,7 @@
       </div>
 
       <div id="my-nav" class="collapse navbar-collapse mobile-menu-collapse pl-0 pt-4">
-        <div class="mb-5 pl-2  dashboard-active">
+        <div class="mb-5 pl-2 ">
           <p>
             <a href="index.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
@@ -236,9 +236,9 @@
           </p>
         </div>
 
-        <div class="mb-5 pl-2">
+        <div class="mb-5 pl-2   dashboard-active">
           <p>
-            <a href="bss-financing.html" class=" text-dark" style="text-decoration: none;">
+            <a href="wallet.html" class=" text-dark" style="text-decoration: none;">
               <img class="img-fluid" src="assets/images/financing-icon.svg" alt="">
               &nbsp;&nbsp; Financing
             </a>
@@ -278,17 +278,16 @@
 
   </header>
 
-  <div class="container-fluid">
 
-    <a href="https://rent.smallsmall.com/user/dashboard" class="btn special-link-button mt-3 d-md-inline-block d-none">
-      <div>
-        <p class="text-left" style="font-size: 10px;">Go to</p>
-        <p class="text-right" style="font-size: 11px;">RentSmallsmall<br>dashboard</p>
-      </div>
-    </a>
+
+  <!-- Sub menu for booking section starts here -->
+  <div class="container-fluid d-flex nav-bottom-color sub-menu">
 
   </div>
 
+
+
+  <!-- Main body content starts here -->
   <main class="container">
     <div class="row mt-5">
       <div class="col-12 d-flex justify-content-between">
@@ -296,6 +295,9 @@
           <span>Buysmallsmall</span>
           <span>></span>
           <span>Dashboard</span>
+          <span>></span>
+          <span>Financing</span>
+
         </div>
         <div class="d-md-block d-none">
           <!-- <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button> -->
@@ -310,78 +312,84 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 my-5">
-        <p style="font-size: 22px;">Dashboard</p>
+      <div class="col-12 mt-5">
+        <p style="font-size: 22px;">Financing</p>
       </div>
-      <div class="col-md-4 col-12  mb-4">
-        <div class="card card-custom">
-          <div class="card-body">
-            <p class="card-text">Active Portfolio</p>
-            <div class="d-flex justify-content-between my-2">
-              <h3 class="card-title">3</h3>
-              <p>1 Co-ownership<br>1 Unit owned </p>
-            </div>
-            <div class="dash-divider my-3"></div>
-            <div>
-              <p class="card-text">Value</p>
-              <h3 class="card-title">&#8358;230,000,000</h3>
-            </div>
-          </div>
-        </div>
+      <div class="col-12">
+        <nav class="nav">
+          <li class="nav-item mr-3 ">
+            <a class="nav-link primary-text-color  sub-menu--dashboard-active px-0" id="propertyBtn" href="#"
+              role="button">Application</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link secondary-text-color px-0 " id="shareCertificateBtn" href="#" role="button">History</a>
+          </li>
+
+        </nav>
       </div>
-      <div class="col-md-4 col-12  mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Wallet Balance</p>
-              <h3 class="card-title">&#8358;50,000</h3>
-            </div>
-            <div class="text-right mt-3">
-              <a href="#" class="btn btn-custom-tertiary">Withdraw</a>
-              <a href="#" class="btn btn-custom-tertiary">Top up</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12  mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Gift Basket</p>
-              <h3 class="card-title">20 Shares</h3>
-            </div>
-            <div class="text-right mt-3">
-              <a href="gift-basket.html" class="btn btn-custom-tertiary">Start gifting</a>
-            </div>
 
 
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Upcoming Payment</p>
-              <h3 class="card-title">&#8358;230,000</h3>
-            </div>
-            <div class="text-right mt-3">
-              <a href="#" class="btn btn-custom-tertiary">pay now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 mb-4">
-        <div class="card card-custom">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <div>
-              <p class="card-text">Next Quarterly Payment</p>
-              <h3 class="card-title">&#8358;230,000</h3>
-            </div>
 
+      <!-- Application -->
+      <div class="col-12 mt-5 collapse show" id="shareCertificate">
+        <div class="primary-background py-5 px-md-5 px-4">
+          <div class="mb-5">
+            <p class="financing-title">Applications details</p>
           </div>
+          <div class="row mb-4">
+            <div class="col-md-3 col-12 mb-4 mb-md-0">
+              <p class="custom-font-size-14">Type of Financing</p>
+              <p class="custom-font-size-26">Buysmallsmall</p>
+            </div>
+            <div class="col-md-2 col-12 mb-4 mb-md-0">
+              <p class="custom-font-size-14">Financing Status</p>
+              <p class="custom-font-size-26">Pending</p>
+            </div>
+            <div class="col-md-2 col-12 mb-4 mb-md-0">
+              <p class="custom-font-size-14">Financing Amount</p>
+              <p class="custom-font-size-26">&#8358; 20m</p>
+            </div>
+            <div class="col-md-2 col-12">
+              <p class="custom-font-size-14">Type of Financing</p>
+              <p class="custom-font-size-26">Buysmallsmall</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-12 mb-4 mb-md-0">
+              <p class="custom-font-size-14">Property info</p>
+              <p class="custom-font-size-22">2 br Maisonette B2 Olivia Court Lekki</p>
+            </div>
+            <div class="col-md-5 col-12">
+              <p class="custom-font-size-14">Down payment</p>
+              <div class="d-flex">
+                <p class="custom-font-size-22 mr-3">&#8358;10,000,000</p>
+                <button class="btn tertiary-background  btn-custom-tertiary d-inline-block">Pay now</button>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class=" col-md-5 col-12">
+              <button class="btn tertiary-background  btn-custom-tertiary d-inline-block w-75">Sign contract of
+                sale<span> <img class="img-fluid" src="assets/images/pen-sign.svg" alt=""> </span></button>
+            </div>
+          </div>
+
         </div>
+
       </div>
+
+      <!-- History -->
+      <div class="col-12 mt-5 collapse " id="property">
+        <div class="primary-background p-md-5 p-3">
+
+        </div>
+
+      </div>
+
+
+
+
+
 
     </div>
 
@@ -415,6 +423,61 @@
   <script src="./assets/js/bootstrap-js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#propertyBtn").click(function () {
+        $("#property").addClass("show");
+        $("#shareCertificate").removeClass("show");
+        $("#history").removeClass("show");
+        $("#shareCertificateBtn").addClass("secondary-text-color")
+        $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").removeClass("secondary-text-color")
+
+      });
+      $("#shareCertificateBtn").click(function () {
+        $("#shareCertificate").addClass("show");
+        $("#property").removeClass("show");
+        $("#history").removeClass("show");
+        $("#shareCertificateBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#shareCertificateBtn").removeClass("secondary-text-color")
+        $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").addClass("secondary-text-color")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+
+      });
+      $("#historyBtn").click(function () {
+        $("#history").addClass("show");
+        $("#property").removeClass("show");
+        $("#shareCertificate").removeClass("show");
+
+        $("#shareCertificateBtn").addClass("secondary-text-color")
+        $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyBtn").addClass("secondary-text-color")
+        $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").removeClass("secondary-text-color")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+      });
+
+
+      // handles switch button for unit
+      $("#percent").click(function () {
+        $("#percent").addClass("set-unit-container");
+        $("#naira").removeClass("set-unit-container");
+      });
+      $("#naira").click(function () {
+        $("#naira").addClass("set-unit-container");
+        $("#percent").removeClass("set-unit-container");
+      });
+
+    });
+
+
+  </script>
 
 
 </body>

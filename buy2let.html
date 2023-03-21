@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Favicon link -->
+  <link rel="icon" type="image/x-icon" href="assets/images/bss-favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap-css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="./assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="./assets/fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="./assets/fontawesome/css/solid.css" rel="stylesheet" />
+
+
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="./assets/css/custom-css/header.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/custom-css/bssFinancing.css" />
+
+
+  <title>Portfolio - BSS Financing</title>
+</head>
+
+<body>
+
+
+  <header>
+    <!-- desktop menu bar -->
+    <nav class="navbar navbar-expand-lg nav-bottom-color navbar-light px-4 py-0 d-lg-flex d-none">
+      <a class="navbar-brand" href="index.html">
+        <img class="img-fluid" src="assets/images/bss-logo.svg" alt="logo">
+      </a>
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active mr-5">
+            <a class="nav-link" href="#">
+              <div class="d-flex user-container">
+                <div class="user-shorthand d-flex justify-content-center align-items-center mr-2">
+                  <p class="m-0">JD</p>
+                  <div class="active-user"></div>
+                </div>
+                <div class="user-name">
+                  <p>John Doe</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center  mr-4">
+            <div class="menu-text">
+              <a href="index.html" class=" text-dark" style="text-decoration: none;">Dashboard</a>
+            </div>
+          </li>
+
+
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="property-portfolio.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/portfolio.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="property-portfolio.html" class=" text-dark" style="text-decoration: none;">Property Portfolio</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="wallet.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/wallet-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="wallet.html" class=" text-dark" style="text-decoration: none;">Wallet</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="bss-financing.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/financing-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4 dashboard-active">
+            <div class="menu-text">
+              <a href="bss-financing.html" class=" text-dark" style="text-decoration: none;">Financing</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="notification.html" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2 position-relative">
+                <div class="notification-circle d-md-flex d-none justify-content-center align-items-center">2</div>
+                <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4 ">
+            <div class="menu-text">
+              <a href="notification.html" class=" text-dark" style="text-decoration: none;">Notification</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="profile.html" class=" text-dark" style="text-decoration: none;">Profile</a>
+            </div>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <a class="nav-link p-0" href="#" tabindex="-1" aria-disabled="true">
+              <div class="menu-logo mr-2">
+                <img class="img-fluid" src="assets/images/megaphone.svg" alt="">
+              </div>
+            </a>
+          </li>
+          <li class="nav-item d-flex align-items-center mr-4">
+            <div class="menu-text">
+              <a href="referral.html" class=" text-dark" style="text-decoration: none;">Referrals</a>
+            </div>
+          </li>
+
+        </ul>
+        <a href="#">
+          <span class="navbar-text text-dark mr-5">
+            Log out
+            <img class="img-fluid" src="assets/images/logout.svg" alt="">
+          </span>
+        </a>
+
+
+      </div>
+    </nav>
+
+    <!-- mobile menu bar -->
+    <nav class="navbar d-flex menu-navbar-bg nav-mobile d-flex d-lg-none">
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <img class="img-fluid" src="./assets/images/menu-burger.svg" alt="">
+      </button>
+      <a href="index.html" style="width: 33%" class="flex-grow-1 text-center">
+        <img class="img-fluid" src="assets/images/bss-logo.svg" alt="logo">
+      </a>
+      <div class="d-flex user-container">
+        <div class="user-shorthand d-flex justify-content-center align-items-center mr-2">
+          <p class="m-0">JD</p>
+          <div class="active-user"></div>
+        </div>
+
+      </div>
+      <div class="d-md-none d-block  nav-link text-dark dropdown-toggle dropdown-toggle--custom p-0"
+        data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        <img class="img-fluid" src="./assets/images/user-mobile2.svg" alt="">
+      </div>
+
+
+      <div class="dropdown-menu menu_icon--dropdown p-0  logout-dropdown">
+        <!-- Menu mobile view -->
+        <div class=" menu-desktop py-2 px-4 d-flex flex-column">
+          <a href="#">
+            <span class="navbar-text text-dark mr-5">
+              <img class="img-fluid" src="assets/images/logout.svg" alt="">
+              Log out
+            </span>
+          </a>
+          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
+            <small style="font-size: 10px; line-height: 14px;">Referral
+              code
+            </small><br>
+            Tna2301
+          </button>
+
+        </div>
+
+
+      </div>
+
+      <div id="my-nav" class="collapse navbar-collapse mobile-menu-collapse pl-0 pt-4">
+        <div class="mb-5 pl-2 ">
+          <p>
+            <a href="index.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/dashboard-icon.svg" alt="">
+              &nbsp;&nbsp; Dashboard
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="property-portfolio.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/portfolio.svg" alt="">
+              &nbsp;&nbsp; Property Portfolio
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="wallet.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/wallet-icon.svg" alt="">
+              &nbsp;&nbsp; Wallet
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2  dashboard-active">
+          <p>
+            <a href="wallet.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/financing-icon.svg" alt="">
+              &nbsp;&nbsp; Financing
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="notification.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/inbox-icon.svg" alt="">
+              &nbsp;&nbsp; Notification
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="profile.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              &nbsp;&nbsp; Profile
+            </a>
+          </p>
+        </div>
+
+        <div class="mb-5 pl-2">
+          <p>
+            <a href="referral.html" class=" text-dark" style="text-decoration: none;">
+              <img class="img-fluid" src="assets/images/profile-icon.svg" alt="">
+              &nbsp;&nbsp; Referrals
+            </a>
+          </p>
+        </div>
+
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Sub menu for booking section starts here -->
+  <div class="container-fluid d-flex nav-bottom-color sub-menu">
+    <div class="sub-nav d-flex flex-wrap">
+      <a class="text-decoration-none secondary-text-color mr-4 py-3  sub-menu--dashboard-active"
+        href="property-portfolio.html">
+        <div class="sub-menu-link  ">
+          Portfolio
+        </div>
+      </a>
+
+      <a class="text-decoration-none secondary-text-color mr-4 py-3" href="payments.html">
+        <div class="sub-menu-link  ">
+          Payments
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Main body content starts here -->
+  <main class="container">
+    <div class="row mt-5">
+      <div class="col-12 d-flex justify-content-between">
+        <div style="color: #7D8993; font-size: 13px;" class="font-weight-lighter">
+          <span>Buysmallsmall</span>
+          <span>></span>
+          <span>Dashboard</span>
+          <span>></span>
+          <span>Property portfolio</span>
+          <span>></span>
+          <span>Buysmallsmall financing - 2 br Maisonette Olivia Court Lekki</span>
+        </div>
+        <div class="d-md-block d-none">
+          <!-- <button style="color:#DADADA" type="button" class="btn btn-light">Verified</button> -->
+          <button type="button" class="btn btn-dark d-none">Verified</button>
+          <button style="line-height: 14px;" type="button" class="btn btn-outline-dark">
+            <small style="font-size: 10px; line-height: 14px;">Referral
+              code
+            </small><br>
+            Tna2301
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-5 mb-3">
+        <p style="font-size: 22px;">Buysmallsmall financing - 2 br Maisonette B2 Olivia Court Lekki</p>
+      </div>
+      <div class="col-12">
+        <nav class="nav sub-nav">
+          <li class="nav-item mr-3 ">
+            <a class="nav-link primary-text-color  sub-menu--dashboard-active px-0" id="financingDetailsBtn" href="#"
+              role="button">Financing details</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link secondary-text-color px-0 " id="propertyDetailsBtn" href="#" role="button">Property
+              details</a>
+          </li>
+
+        </nav>
+      </div>
+
+      <!-- Financing details -->
+      <div class="col-12 mt-5 collapse show" id="financingDetails">
+        <div class="primary-background p-md-5 p-3">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="address-title">2 br Maisonette B2 Olivia Court Lekki</h3>
+              <p>Agungi, Lekki, Lagos</p>
+            </div>
+          </div>
+          <div class="row my-md-5">
+            <div class="col-md-3 col-12 my-2">
+              <p style="font-size: 14px;" class="font-weight-light">Financing Status</p>
+              <p style="font-size: 26px;">Approved</p>
+            </div>
+            <div class="col-md-3 col-12 my-2">
+              <p style="font-size: 14px;" class="font-weight-light">Approved Financing Amount</p>
+              <p style="font-size: 26px;">&#8358;16,000,000</p>
+            </div>
+            <div class="col-md-3 col-12 my-2">
+              <p style="font-size: 14px;" class="font-weight-light">Origination fee Paid</p>
+              <p style="font-size: 26px;">&#8358;59,000</p>
+            </div>
+            <div class="col-md-3 col-12 my-2 p-md-0">
+              <p style="font-size: 14px;" class="font-weight-light">Outstanding Balance</p>
+              <div class="d-flex">
+                <p style="font-size: 26px;" class="d-flex align-items-center m-1">&#8358;10,000,000</p>
+                <button type="button" class="btn tertiary-background btn-custom-tertiary" data-target="#transferFunds"
+                  data-toggle="modal">Pay now</button>
+                <!-- <button style="background-color: #EDEDEF;" type="button" class="btn">Paid</button> -->
+              </div>
+            </div>
+
+
+            <!-- modal to transfer -->
+            <div class="modal fade" id="transferFunds" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">
+                    <h5>Transfer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body px-5">
+                    <div class="row">
+                      <div class=" col-12 my-2">
+                        <p style="font-size: 12px;" class="font-weight-light">Please transfer outstanding balance to the
+                          Buysmallsmall account
+                          details below.</p>
+                      </div>
+                      <div class=" col-12 my-2">
+                        <p style="font-size: 13px;" class="font-weight-light">Account name</p>
+                        <p style="font-size: 26px;">Small Small Te- BuySmallsmall</p>
+                      </div>
+                      <div class=" col-12 my-2">
+                        <p style="font-size: 13px;" class="font-weight-light">Bank name</p>
+                        <p style="font-size: 26px;">Providus Bank</p>
+                      </div>
+                      <div class=" col-12 my-2">
+                        <p style="font-size: 13px;" class="font-weight-light">Account number</p>
+                        <p style="font-size: 26px;">7901029183</p>
+                      </div>
+                      <div class="col-12">
+                        <p style="font-size: 13px;" class="font-weight-light">Outstanding Balance</p>
+                        <div class="primary-background p-md-4 p-3">
+                          <p class="text-center" style="font-size: 26px;">&#8358;16,000,000</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="my-4 text-center mt-5">
+                      <button type="submit" class="btn btn-dark  tertiary-background px-md-4 py-md-2">Send payment
+                        confirmation</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-4  col-12">
+              <button class="btn font-weight-light w-100 p-md-3 p-2 tertiary-background btn-custom-tertiary"
+                type="button" data-target="#" data-toggle="modal">
+                Sign Contract of Sale</button>
+            </div>
+            <div class="col-md-4  col-12 d-none">
+              <button style="background-color: #EDEDEF;"
+                class="btn font-weight-light w-100 p-md-3 p-2 btn-custom-tertiary" type="button" data-target="#"
+                data-toggle="modal">
+                Contract of Sale Completed</button>
+            </div>
+
+          </div>
+
+          <div class="divider my-5"></div>
+
+          <div>
+            <div class="row">
+              <div class="col-12">
+                <p>Property Payment Schedule</p>
+              </div>
+
+              <div class="col-md-3 col-12 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Property Value</p>
+                <p style="font-size: 26px;">&#8358;80,000,000</p>
+              </div>
+              <div class="col-md-3 col-12 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Equity 20%</p>
+                <p style="font-size: 26px;">&#8358;16,000,000</p>
+              </div>
+              <div class="col-md-3 col-12 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Principal</p>
+                <p style="font-size: 26px;">&#8358;64,000,000</p>
+              </div>
+              <div class="col-md-3 col-12 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Admin fee 5%</p>
+                <p style="font-size: 26px;">&#8358;10,000,000</p>
+              </div>
+
+              <div class="col-md-3 col-6 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Interest</p>
+                <p style="font-size: 26px;">0.0%</p>
+              </div>
+              <div class="col-md-3 col-6 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Tenor in months</p>
+                <p style="font-size: 26px;">72 months</p>
+              </div>
+              <div class="col-md-3 col-6 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Tenor in years</p>
+                <p style="font-size: 26px;">6 years</p>
+              </div>
+              <div class="col-md-3 col-6 my-2">
+                <p style="font-size: 14px;" class="font-weight-light">Initial paymennt</p>
+                <p style="font-size: 26px;">&#8358;1,000,000</p>
+              </div>
+            </div>
+
+            <div class="default-background px-4 py-3 mt-5">
+              <div class="table-responsive ">
+                <table class="table text-dark">
+                  <thead>
+                    <tr class="border-bottom">
+                      <td>Month</td>
+                      <td>Year 1(28%)<br>12,866,667</td>
+                      <td>Year 2(19%)<br>12,866,667</td>
+                      <td>Year 3(15%)<br>12,866,667</td>
+                      <td>Year 4(11%)<br>12,866,667</td>
+                      <td>Year 5(7%)<br>12,866,667</td>
+                      <td>Year 6(4%)<br>12,866,667</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Month 1</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                      <td>1,866,667</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- Property details -->
+      <div class="col-12 mt-5 collapse" id="propertyDetails">
+        <div class="primary-background p-md-5 p-3">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="address-title">2 br Maisonette B2 Olivia Court Lekki</h3>
+              <p>Agungi, Lekki, Lagos</p>
+            </div>
+          </div>
+          <div class="row my-md-5">
+            <div class="col-md-5 col-12 my-2 my-md-0">
+              <p style="font-size: 14px;" class="font-weight-light">Payment Plan</p>
+              <p style="font-size: 26px;">Buysmallsmall Financing</p>
+            </div>
+            <div class="col-md-3 col-12 my-2 my-md-0">
+              <p style="font-size: 14px;" class="font-weight-light">Current market value</p>
+              <p style="font-size: 26px;">&#8358;34,000,000</p>
+            </div>
+            <div class="col-md-4 col-12 my-2 my-md-0">
+              <p style="font-size: 14px;" class="font-weight-light">Property Status</p>
+              <p style="font-size: 26px;">Ongoing Construction</p>
+              <button type="button" class="btn tertiary-background">Progress report</button>
+            </div>
+
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-3 col-5">
+              <button class="btn font-weight-light w-100 p-md-3 p-2 tertiary-background" type="button"
+                data-target="#liquidate" data-toggle="modal">
+                Liquidate</button>
+            </div>
+            <div class="col-md-3 col-7">
+              <button class="btn font-weight-light w-100 p-md-3 p-2 tertiary-background" type="button"
+                data-target="#transferShares" data-toggle="modal">
+                Transfer Ownership</button>
+            </div>
+
+            <!-- liqudate shares modal -->
+            <div class="modal fade" id="liquidate" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">Liquidate Shares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-5">
+                    <form>
+                      <div class="form-group">
+                        <label for="liquidateShare">How man shares do you want to sell?</label>
+                        <input type="text" class="form-control" id="liquidateShare" placeholder="Type number of shares">
+
+                      </div>
+
+                      <div class="my-4 text-center mt-5">
+                        <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                          data-target="#createWallet">Liquidate</button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Success after sharing shares modal -->
+            <div class="modal fade d-none" id="liquidate" data-keyboard="false" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">Liquidate Shares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body p-5">
+                    <div class="d-flex flex-column justify-content-items text-center">
+                      <p>Your offer has been received!!</p>
+                      <p>Our team will reach out to you within 24hrs to complete the process</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Transfer shares modal -->
+            <div class="modal fade" id="transferShares" data-backdrop="static" data-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header primary-background pl-5">
+                    <h5>Transfer Property Shares</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body px-5">
+                    <p class="text-center my-4">You have &nbsp;&nbsp;<span
+                        style="font-size: 26px;">4</span>&nbsp;&nbsp;Property shares</p>
+                    <form>
+                      <div class="form-group m-2">
+                        <label style="font-size: 12px;" for="numberOfShares">Shares to transfer</label>
+                        <input type="text" class="form-control p-3" id="numberOfShares"
+                          placeholder="Enter number of shares to transfer">
+                      </div>
+                      <div class="form-group m-2">
+                        <label style="font-size: 12px;" for="nameOfOwner">Name of new owner</label>
+                        <input type="text" class="form-control p-3" id="nameOfOwner" placeholder="Full  name">
+                      </div>
+                      <div class="form-group m-2">
+                        <label style="font-size: 12px;" for="emailOfOwner">Email of new owner</label>
+                        <input type="text" class="form-control p-3" id="emailOfOwner" placeholder="Email Address">
+                      </div>
+
+                      <div class="my-4 text-center mt-5">
+                        <button type="submit" class="btn btn-dark py-2 btn-custom-primary px-5" data-toggle="modal"
+                          data-target="#createWallet">Transfer</button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="divider my-5"></div>
+
+          <!-- Financial Highlights -->
+          <div>
+            <h6>Financial Highlights</h6>
+
+            <div class="default-background px-4 py-3">
+
+              <div>
+                <table class="table table-responsive">
+                  <thead>
+                    <tr>
+                      <td></td>
+                      <td>Year 1</td>
+                      <td>Year 2</td>
+                      <td>Year 3</td>
+                      <td>Year 4</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Rent</td>
+                      <td>0%</td>
+                      <td>7%</td>
+                      <td>8%</td>
+                      <td>9%</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Appreciation</td>
+                      <td>9%</td>
+                      <td>10%</td>
+                      <td>11%</td>
+                      <td>12%</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">Capital + Appreciation</td>
+                      <td>&#8358;98m</td>
+                      <td>&#8358;102m</td>
+                      <td>&#8358;150m</td>
+                      <td>&#8358;190m</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-end">
+        <div>
+          <a class="mr-3" href="#">Rentsmallsmall FAQ</a>
+          <a class="mr-3" href="#">Buysmallsmall FAQ</a>
+          <a class="mr-3" href="#">About Us</a>
+          <a class="" href="#">Blog</a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- Jquery js -->
+  <script src="./assets/js/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap js and Popper js -->
+  <script src="./assets/js/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/bootstrap-js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#financingDetailsBtn").click(function () {
+        $("#financingDetails").addClass("show");
+        $("#propertyDetails").removeClass("show");
+        $("#history").removeClass("show");
+        $("#propertyDetailsBtn").addClass("secondary-text-color")
+        $("#propertyDetailsBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#financingDetailsBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#financingDetailsBtn").removeClass("secondary-text-color")
+
+      });
+      $("#propertyDetailsBtn").click(function () {
+        $("#propertyDetails").addClass("show");
+        $("#financingDetails").removeClass("show");
+        $("#history").removeClass("show");
+        $("#propertyDetailsBtn").addClass("primary-text-color sub-menu--dashboard-active")
+        $("#propertyDetailsBtn").removeClass("secondary-text-color")
+        $("#financingDetailsBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#financingDetailsBtn").addClass("secondary-text-color")
+        $("#historyBtn").addClass("secondary-text-color")
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+
+      });
+      $("#historyBtn").click(function () {
+        $("#history").addClass("show");
+        $("#financingDetails").removeClass("show");
+        $("#propertyDetails").removeClass("show");
+
+        $("#propertyDetailsBtn").addClass("secondary-text-color")
+        $("#propertyDetailsBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#financingDetailsBtn").addClass("secondary-text-color")
+        $("#financingDetailsBtn").removeClass("primary-text-color sub-menu--dashboard-active")
+        $("#historyBtn").removeClass("secondary-text-color")
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active")
+      });
+
+
+      // handles switch button for unit
+      $("#percent").click(function () {
+        $("#percent").addClass("set-unit-container");
+        $("#naira").removeClass("set-unit-container");
+      });
+      $("#naira").click(function () {
+        $("#naira").addClass("set-unit-container");
+        $("#percent").removeClass("set-unit-container");
+      });
+
+    });
+
+
+  </script>
+
+
+</body>
+
+</html>
