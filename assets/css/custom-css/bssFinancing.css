@@ -75,6 +75,69 @@
 
 
 
+.order-track-step {
+  display: flex;
+  height: 7rem;
+}
+
+.order-track-step:last-child {
+  overflow: hidden;
+  height: 4rem;
+}
+
+.order-track-step:last-child .order-track-status span:last-of-type {
+  /* display: none; */
+  background: #DADADA;
+}
+
+.order-track-step:nth-last-child(2) .order-track-status-line:last-of-type {
+  /* display: none; */
+  background: #DADADA;
+}
+
+.order-track-step:last-child {
+  color: #DADADA;
+}
+
+.order-track-status {
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.order-track-status-dot {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #662D91;
+}
+
+.order-track-status-line {
+  display: block;
+  margin: 0 auto;
+  width: 2px;
+  height: 7rem;
+  background: #662D91;
+}
+
+.order-track-text-stat {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.order-track-text-sub {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.order-track {
+  transition: all 0.3s height 0.3s;
+  transform-origin: top center;
+}
+
+
+
 /*****MEDIA QUERY****/
 
 /* Small devices (landscape phones, 576px and up) */
