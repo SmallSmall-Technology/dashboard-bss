@@ -6,6 +6,48 @@ header nav {
   background: #F3F6F8;
 }
 
+#preloader {
+  /* background: #FFFFFF url(../../images/loader2.gif) center center no-repeat; */
+  background: #F3F6F8;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #662D91;
+  border-bottom: 16px solid #662D91;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  margin: 50vh auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* START CUSTOM FONT SIZES */
 .custom-font-size-14 {
   font-size: 14px;
