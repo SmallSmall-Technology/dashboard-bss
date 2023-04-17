@@ -34,6 +34,31 @@
   <link rel="stylesheet" href="./assets/css/custom-css/footer.css" />
   <link rel="stylesheet" href="./assets/css/custom-css/coOwnership.css" />
 
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", { packages: ["corechart"] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Rent', 7],
+        ['Capital Appreciation', 2],
+      ]);
+
+      var options = {
+        title: '',
+        pieHole: 0.4,
+        // width: 400,
+        // height: 600,
+        colors: ['#662D91', '#00CDA6',]
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+      chart.draw(data, options);
+    }
+
+  </script>
+
 
   <title>Portfolio - Co-Ownership</title>
 </head>
@@ -347,6 +372,67 @@
       <!-- Property -->
       <div class="col-12 mt-5 collapse show" id="property">
         <div class="primary-background p-md-5 p-3">
+          <div>
+            <h6 class="mb-4">Financial Highlights</h6>
+
+            <div class="row">
+              <div class="col-md-8 col-12">
+                <div class="default-background px-4 py-3">
+                  <div class="unit-container d-flex mb-2">
+                    <div class="unit-container__percent set-unit-container" id="percent">
+                      <span class="">%</span>
+                    </div>
+                    <div class="unit-container__naira" id="naira">
+                      <span class="">&#8358;</span>
+                    </div>
+                  </div>
+                  <div>
+                    <table class="table table-responsive">
+                      <thead>
+                        <tr>
+                          <td></td>
+                          <td>Year 1</td>
+                          <td>Year 2</td>
+                          <td>Year 3</td>
+                          <td>Year 4</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td scope="row">Rent</td>
+                          <td>0%</td>
+                          <td>7%</td>
+                          <td>8%</td>
+                          <td>9%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Appreciation</td>
+                          <td>9%</td>
+                          <td>10%</td>
+                          <td>11%</td>
+                          <td>12%</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">Capital + Appreciation</td>
+                          <td>&#8358;98m</td>
+                          <td>&#8358;102m</td>
+                          <td>&#8358;150m</td>
+                          <td>&#8358;190m</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-md-block d-none">
+                <div class="default-background h-100">
+                  <div id="donutchart" style="height: 100%"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="divider my-5"></div>
           <div class="row">
             <div class="col-12">
               <h3 class="address-title">2 br Maisonette B2 Olivia Court Lekki</h3>
@@ -398,6 +484,7 @@
             </div>
 
           </div>
+
           <div class="row mt-4">
             <div class="col-md-3 col-5 mb-3">
               <button class="btn font-weight-light w-100 p-md-3 p-2 tertiary-background  btn-custom-tertiary"
@@ -546,58 +633,8 @@
 
           </div>
 
-          <div class="divider my-5"></div>
 
-          <div>
-            <h6>Financial Highlights</h6>
 
-            <div class="default-background px-4 py-3">
-              <div class="unit-container d-flex mb-2">
-                <div class="unit-container__percent set-unit-container" id="percent">
-                  <span class="">%</span>
-                </div>
-                <div class="unit-container__naira" id="naira">
-                  <span class="">&#8358;</span>
-                </div>
-              </div>
-              <div>
-                <table class="table table-responsive">
-                  <thead>
-                    <tr>
-                      <td></td>
-                      <td>Year 1</td>
-                      <td>Year 2</td>
-                      <td>Year 3</td>
-                      <td>Year 4</td>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td scope="row">Rent</td>
-                      <td>0%</td>
-                      <td>7%</td>
-                      <td>8%</td>
-                      <td>9%</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Appreciation</td>
-                      <td>9%</td>
-                      <td>10%</td>
-                      <td>11%</td>
-                      <td>12%</td>
-                    </tr>
-                    <tr>
-                      <td scope="row">Capital + Appreciation</td>
-                      <td>&#8358;98m</td>
-                      <td>&#8358;102m</td>
-                      <td>&#8358;150m</td>
-                      <td>&#8358;190m</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
 
 
         </div>
