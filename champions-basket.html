@@ -372,7 +372,9 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                  <button type="submit" class="btn btn-custom-tertiary px-5">Send</button>
+                  <button type="submit" class="btn  px-3 mr-3" style="background-color:#CCCCD3"><i
+                      class="fa-solid fa-lock"></i>&nbsp;&nbsp; Unlock & Send</button>
+                  <button type="submit" class="btn px-5 text-white" style="background-color: #138E3D;">Send</button>
                 </div>
               </form>
             </div>
@@ -492,55 +494,55 @@
     crossorigin="anonymous"></script>
 
   <script>
-      $(document).ready(function () {
-        $("#propertyBtn").click(function () {
-          $("#property").addClass("show");
-          $("#shareCertificate").removeClass("show");
-          $("#history").removeClass("show");
-          $("#shareCertificateBtn").addClass("secondary-text-color");
-          $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active");
-          $("#historyBtn").addClass("secondary-text-color");
-          $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
-          $("#propertyBtn").addClass("primary-text-color sub-menu--dashboard-active");
-          $("#propertyBtn").removeClass("secondary-text-color");
-        });
-        $("#shareCertificateBtn").click(function () {
-          $("#shareCertificate").addClass("show");
-          $("#property").removeClass("show");
-          $("#history").removeClass("show");
-          $("#shareCertificateBtn").addClass("primary-text-color sub-menu--dashboard-active");
-          $("#shareCertificateBtn").removeClass("secondary-text-color");
-          $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
-          $("#propertyBtn").addClass("secondary-text-color");
-          $("#historyBtn").addClass("secondary-text-color");
-          $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
-        });
-        $("#historyBtn").click(function () {
-          $("#history").addClass("show");
-          $("#property").removeClass("show");
-          $("#shareCertificate").removeClass("show");
+    $(document).ready(function () {
+      $("#propertyBtn").click(function () {
+        $("#property").addClass("show");
+        $("#shareCertificate").removeClass("show");
+        $("#history").removeClass("show");
+        $("#shareCertificateBtn").addClass("secondary-text-color");
+        $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active");
+        $("#historyBtn").addClass("secondary-text-color");
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
+        $("#propertyBtn").addClass("primary-text-color sub-menu--dashboard-active");
+        $("#propertyBtn").removeClass("secondary-text-color");
+      });
+      $("#shareCertificateBtn").click(function () {
+        $("#shareCertificate").addClass("show");
+        $("#property").removeClass("show");
+        $("#history").removeClass("show");
+        $("#shareCertificateBtn").addClass("primary-text-color sub-menu--dashboard-active");
+        $("#shareCertificateBtn").removeClass("secondary-text-color");
+        $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
+        $("#propertyBtn").addClass("secondary-text-color");
+        $("#historyBtn").addClass("secondary-text-color");
+        $("#historyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
+      });
+      $("#historyBtn").click(function () {
+        $("#history").addClass("show");
+        $("#property").removeClass("show");
+        $("#shareCertificate").removeClass("show");
 
-          $("#shareCertificateBtn").addClass("secondary-text-color");
-          $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active");
-          $("#propertyBtn").addClass("secondary-text-color");
-          $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
-          $("#historyBtn").removeClass("secondary-text-color");
-          $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active");
-        });
+        $("#shareCertificateBtn").addClass("secondary-text-color");
+        $("#shareCertificateBtn").removeClass("primary-text-color sub-menu--dashboard-active");
+        $("#propertyBtn").addClass("secondary-text-color");
+        $("#propertyBtn").removeClass("primary-text-color sub-menu--dashboard-active");
+        $("#historyBtn").removeClass("secondary-text-color");
+        $("#historyBtn").addClass("primary-text-color sub-menu--dashboard-active");
+      });
 
-        // handles switch button for unit
-        $("#percent").click(function () {
-          $("#percent").addClass("set-unit-container");
-          $("#naira").removeClass("set-unit-container");
-        });
-        $("#naira").click(function () {
-          $("#naira").addClass("set-unit-container");
-          $("#percent").removeClass("set-unit-container");
-        });
+      // handles switch button for unit
+      $("#percent").click(function () {
+        $("#percent").addClass("set-unit-container");
+        $("#naira").removeClass("set-unit-container");
+      });
+      $("#naira").click(function () {
+        $("#naira").addClass("set-unit-container");
+        $("#percent").removeClass("set-unit-container");
+      });
 
-        //Add new contact
+      //Add new contact
 
-        const newPerson = `
+      const newPerson = `
           <div class="col-12 default-background new-contact-form p-md-5 p-2 my-5 ">
               <div class="d-flex justify-content-end text-danger">
                 <i class="fa-solid fa-circle-xmark" style="cursor: pointer;" id="closeContact"></i>
@@ -575,16 +577,16 @@
       
       `;
 
-        // create a new form
-        $("#add-contact-btn").click(function () {
-          $("#new-contact").append(newPerson);
-        });
-
-        // close the new contact form
-        $(document).on("click", "#closeContact", function (e) {
-          $("#closeContact").parents(".new-contact-form ").remove();
-        });
+      // create a new form
+      $("#add-contact-btn").click(function () {
+        $("#new-contact").append(newPerson);
       });
+
+      // close the new contact form
+      $(document).on("click", "#closeContact", function (e) {
+        $("#closeContact").parents(".new-contact-form ").remove();
+      });
+    });
   </script>
 </body>
 
