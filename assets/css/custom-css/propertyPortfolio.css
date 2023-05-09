@@ -9,7 +9,7 @@
   border-radius: 4px;
   min-width: 211px;
   color: #ffffff
-  /* padding: 2em; */
+    /* padding: 2em; */
 }
 
 
@@ -18,3 +18,83 @@
   border-radius: 4px;
 
 }
+
+
+.stp-title {
+  font-size: 28px;
+}
+
+.stp-divider {
+  width: 2px;
+  background: #550D8C;
+  height: 100%;
+}
+
+.stp-btn {
+  /* padding: 1em; */
+  background: #550D8C;
+  border-radius: 20px;
+  color: #ffffff
+}
+
+.stp-btn:hover {
+  /* padding: 1em; */
+  background: #a451e4;
+  color: #ffffff
+}
+
+
+.sub-heading {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sub-heading-2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.sub-heading-3 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.value-text {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.value-text-2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.property-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+/*****MEDIA QUERY****/
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 480px) {
+  .stp-title {
+    font-size: 23px;
+  }
+
+  .tsc-container {
+    text-align: center;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up)*/
+@media screen and (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up)*/
+@media screen and (992px <=width <=1024px) {}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {}
